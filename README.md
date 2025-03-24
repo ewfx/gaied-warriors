@@ -1,4 +1,4 @@
-# 🚀 Project Name
+# 🚀 Email Classification
 
 ## 📌 Table of Contents
 - [Introduction](#introduction)
