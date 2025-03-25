@@ -1,4 +1,4 @@
-# 🚀 Email Classification
+# 🚀 Email Classification Test Commit
 
 ## 📌 Table of Contents
 - [Introduction](#introduction)
