@@ -76,5 +76,5 @@ We developed this solution using modern AI technologies:
 - 🔹 API: OpenAI API
 
 ## 👥 Team
-- **Your Name** - [GitHub](#) | [LinkedIn](#)
-- **Teammate 2** - [GitHub](#) | [LinkedIn](#)
+- **K, Lakshmi Kalpana** - [GitHub](#) | [LinkedIn](#)
+- **Anjum, Nishath** - [GitHub](#) | [LinkedIn](#)
