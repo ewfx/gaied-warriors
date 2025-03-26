@@ -18,7 +18,7 @@ Email Classification is an AI-powered solution that automatically categorizes em
 
 ## 🎥 Demo
 🔗 [Live Demo](https://github.com/ewfx/gaied-warriors/blob/main/artifacts/demo/Hackathon_recording.mp4)  
-📹 [Video Demo](#) (if applicable)  
+📹 [Video Demo](https://github.com/ewfx/gaied-warriors/blob/main/artifacts/demo/Hackathon_recording.mp4)  
 🖼️ Screenshots:
 
 ![Landing Page](https://github.com/ewfx/gaied-warriors/blob/main/artifacts/demo/LandingPage.png)
