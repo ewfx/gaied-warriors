@@ -17,7 +17,7 @@
 Email Classification is an AI-powered solution that automatically categorizes emails based on their content and intent. This project aims to solve the problem of email overload by intelligently sorting incoming messages into relevant categories, helping users manage their inbox more efficiently.
 
 ## 🎥 Demo
-🔗 [Live Demo](https://github.com/ewfx/gaied-warriors/blob/main/artifacts/demo/Hackathon_recording.mp4)  
+
 📹 [Video Demo](https://github.com/ewfx/gaied-warriors/blob/main/artifacts/demo/Hackathon_recording.mp4)  
 🖼️ Screenshots:
 
