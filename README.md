@@ -21,8 +21,8 @@ Email Classification is an AI-powered solution that automatically categorizes em
 📹 [Video Demo](#) (if applicable)  
 🖼️ Screenshots:
 
-![Screenshot 1](link-to-image)
-
+![Landing Page](https://github.com/ewfx/gaied-warriors/blob/main/artifacts/demo/LandingPage.png)
+![Final Page](https://github.com/ewfx/gaied-warriors/blob/main/artifacts/demo/FinalPage.png)
 ## 💡 Inspiration
 In today's digital age, professionals spend hours managing their email inbox. We were inspired to create a solution that leverages AI to automate email categorization, reducing the time spent on email management and improving productivity.
 
