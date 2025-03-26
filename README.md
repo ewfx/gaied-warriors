@@ -14,7 +14,7 @@
 ---
 
 ## 🎯 Introduction
-A brief overview of your project and its purpose. Mention which problem statement are your attempting to solve. Keep it concise and engaging.
+Email Classification is an AI-powered solution that automatically categorizes emails based on their content and intent. This project aims to solve the problem of email overload by intelligently sorting incoming messages into relevant categories, helping users manage their inbox more efficiently.
 
 ## 🎥 Demo
 🔗 [Live Demo](#) (if applicable)  
@@ -24,36 +24,54 @@ A brief overview of your project and its purpose. Mention which problem statemen
 ![Screenshot 1](link-to-image)
 
 ## 💡 Inspiration
-What inspired you to create this project? Describe the problem you're solving.
+In today's digital age, professionals spend hours managing their email inbox. We were inspired to create a solution that leverages AI to automate email categorization, reducing the time spent on email management and improving productivity.
 
 ## ⚙️ What It Does
-Explain the key features and functionalities of your project.
+- Automatically classifies emails using GPT models
+- Provides intelligent categorization based on email content
+- Processes emails in real-time
+- Delivers accurate classification results
+- Explains classification reasoning
 
 ## 🛠️ How We Built It
-Briefly outline the technologies, frameworks, and tools used in development.
+We developed this solution using modern AI technologies:
+- GPT models for intelligent email analysis
+- FastAPI backend for handling API requests
+- Langchain for structuring prompts and processing responses
+- Python for backend implementation
+- OpenAI's API for accessing GPT models
 
 ## 🚧 Challenges We Faced
-Describe the major technical or non-technical challenges your team encountered.
+- Optimizing prompt engineering for accurate classifications
+- Managing API rate limits and costs
+- Ensuring fast response times
+- Handling different email formats and structures
+- Fine-tuning the system for better accuracy
 
 ## 🏃 How to Run
 1. Clone the repository  
    ```sh
-   git clone https://github.com/your-repo.git
+   git clone https://github.com/gaied-warriors/email-classification.git
    ```
 2. Install dependencies  
    ```sh
-   npm install  # or pip install -r requirements.txt (for Python)
+   pip install -r requirements.txt
    ```
-3. Run the project  
+3. Set up environment variables
    ```sh
-   npm start  # or python app.py
+   cp .env.example .env
+   # Add your OpenAI API key to .env
+   ```
+4. Run the project  
+   ```sh
+   python backend/app.py
    ```
 
 ## 🏗️ Tech Stack
-- 🔹 Frontend: React / Vue / Angular
-- 🔹 Backend: Node.js / FastAPI / Django
-- 🔹 Database: PostgreSQL / Firebase
-- 🔹 Other: OpenAI API / Twilio / Stripe
+- 🔹 Backend: FastAPI, Python
+- 🔹 AI: OpenAI GPT models
+- 🔹 Framework: Langchain
+- 🔹 API: OpenAI API
 
 ## 👥 Team
 - **Your Name** - [GitHub](#) | [LinkedIn](#)
