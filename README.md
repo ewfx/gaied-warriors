@@ -59,12 +59,14 @@ We developed this solution using modern AI technologies:
    ```
 3. Set up environment variables
    ```sh
-   cp .env.example .env
-   # Add your OpenAI API key to .env
+   cd code/src
+   $env:OPENAI_API_KEY="<openai_key>"
    ```
 4. Run the project  
    ```sh
-   python backend/app.py
+   python main.py
+   Run Go live extension in Vscode with port 5500
+
    ```
 
 ## 🏗️ Tech Stack
