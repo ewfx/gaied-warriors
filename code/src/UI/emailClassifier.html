@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Classifier</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        .upload-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 150px;
+            height: 150px;
+            border: 2px dashed #666;
+            border-radius: 10px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        .upload-icon {
+            font-size: 50px;
+            color: #666;
+        }
+        .results {
+            margin-top: 20px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Email Classifier</h1>
+    <p>Please upload EML file here</p>
+    <label class="upload-box">
+        <input type="file" id="fileInput" accept=".eml" hidden>
+        <div class="upload-icon">&#x2191;</div>
+    </label>
+    <div class="results">
+        <p><strong>Request Type:</strong> <span id="requestType"></span></p>
+        <p><strong>Sub Request Type:</strong> <span id="subRequestType"></span></p>
+        <p><strong>Confidence Score:</strong> <span id="confidenceScore"></span></p>
+    </div>
+
+    <script>
+        document.getElementById('fileInput').addEventListener('change', async function(event) {
+            const file = event.target.files[0];
+            if (file) {
+                // Show loading state
+                document.getElementById('requestType').innerText = 'Processing...';
+                document.getElementById('subRequestType').innerText = 'Processing...';
+                document.getElementById('confidenceScore').innerText = 'Processing...';
+
+                const formData = new FormData();
+                formData.append('file', file);
+
+                try {
+                    const response = await fetch('http://localhost:8000/process-email', {
+                        method: 'POST',
+                        mode: 'cors',
+                        credentials: 'include',
+                        body: formData
+                    });
+
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+
+                    const result = await response.json();
+                    
+                    // Update the results
+                    document.getElementById('requestType').innerText = result.RequestType || 'N/A';
+                    document.getElementById('subRequestType').innerText = result.SubRequestType || 'N/A';
+                    document.getElementById('confidenceScore').innerText = result.ConfidenceScore || 'N/A';
+                } catch (error) {
+                    console.error('Error:', error);
+                    document.getElementById('requestType').innerText = 'Error processing file';
+                    document.getElementById('subRequestType').innerText = 'Error';
+                    document.getElementById('confidenceScore').innerText = 'N/A';
+                }
+            }
+        });
+    </script>
+</body>
+</html>
